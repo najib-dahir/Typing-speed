@@ -5,7 +5,7 @@ import Timer from './Timer';
 import Results from './Results';
 
 function TypingSpeed() {
-  const [text, setText] = useState('This is a sample text for typing speed test.');
+  const [text] = useState('This is a sample text for typing speed test.');
   const [userInput, setUserInput] = useState('');
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
