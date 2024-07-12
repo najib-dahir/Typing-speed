@@ -14,7 +14,7 @@ const Home = () => {
             </header>
             <main className="max-w-6xl mx-auto px-4 py-8">
                 <section className="intro text-center mb-8">
-                    <img src={typing.png} alt="Typing Test Image" className="max-w-full mb-4" />
+                    
                     <p className="text-lg">Improve your typing speed and accuracy with our typing test. Track your progress and challenge yourself!</p>
                 </section>
                 <section className="features flex justify-around mb-8">
