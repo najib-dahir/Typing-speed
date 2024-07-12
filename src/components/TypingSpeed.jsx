@@ -5,7 +5,6 @@ import Timer from './Timer';
 import Results from './Results';
 
 function TypingSpeed() {
-  const [text, setText] = useState('This is a sample text for typing speed test.');
   const [userInput, setUserInput] = useState('');
   const [time, setTime] = useState(0);
   const [isRunning, setIsRunning] = useState(false);
@@ -15,7 +14,7 @@ function TypingSpeed() {
     let interval = null;
     if (isRunning) {
       interval = setInterval(() => {
-        setTime((prevTime) => prevTime + 1);
+        setTime(prevTime => prevTime + 1);
       }, 1000);
     } else if (!isRunning && time !== 0) {
       clearInterval(interval);
@@ -42,8 +41,8 @@ function TypingSpeed() {
   };
 
   return (
-    <div className="App flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="w-full max-w-md mx-auto text-center">
+    <div className="App flex flex-col items-center  justify-center min-h-screen bg-gray-100">
+      <div className="w-full max-w-md mx-auto text-cente ">
         <h1 className="text-3xl font-bold mb-4">Typing Speed Test</h1>
         <TextDisplay text={text} userInput={userInput} />
         <TypingInput userInput={userInput} setUserInput={setUserInput} setIsRunning={setIsRunning} />
