@@ -4,7 +4,7 @@ import React from 'react';
 
 import typingImage from './typing.png'; // Import your typing image
 import typing3Image from './typing3.png'; // Import your typing3 image
-import typing2Image from './typing2.png'; // Import your typing2 image
+
 
 const Home = () => {
     return (
@@ -14,7 +14,7 @@ const Home = () => {
             </header>
             <main className="max-w-6xl mx-auto px-4 py-8">
                 <section className="intro text-center mb-8">
-                    <img src={typingImage} alt="Typing Test Image" className="max-w-full mb-4" />
+                    <img src={typing.png} alt="Typing Test Image" className="max-w-full mb-4" />
                     <p className="text-lg">Improve your typing speed and accuracy with our typing test. Track your progress and challenge yourself!</p>
                 </section>
                 <section className="features flex justify-around mb-8">
